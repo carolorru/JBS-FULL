@@ -1,0 +1,21 @@
+footer
+	position: relative
+	width: 100%
+	height: 250px
+	margin-top: -250px
+	.mud
+		$image: "mud.png"
+		+image-block($image)
+		position: absolute
+		display: block
+		bottom: 0px
+		left: -87px
+		z-index: 1004
+	.flag
+		$image: "flag.png"
+		+image-block($image)
+		position: absolute
+		display: block
+		bottom: 0px
+		right: -25px
+		z-index: 1005

@@ -1,0 +1,113 @@
+.winners
+	.bg-collage
+		.bg-top .content-top
+			h2
+				text-transform: uppercase
+				text-align: left
+				margin-top: 115px
+#winners
+	position: relative
+	display: block
+	clear: both
+	.no-info
+		margin: 40px 0px 120px
+	p
+		font-family: "Gotham-Ultra"
+		font-size: 18px
+		color: #630811
+		text-transform: uppercase
+		text-align: center
+	.loading
+		position: relative
+		top: 70px
+		left: 50%
+		margin-left: -21px
+		display: none
+		margin: 100px auto 200px
+	.nav 
+		ul
+			margin: 0
+			padding: 0
+			display: block
+		li			
+			font-family: "Gotham-Book"
+			font-size: 19px
+			line-height: 26px
+			text-align: center
+			display: table-cell
+			margin: 0 0 1px	
+			padding-right: 15px
+			a
+				color: #630811
+				text-decoration: none
+			a:hover
+				text-decoration: underline
+		.disable
+			a
+				color: #616161
+				text-decoration: none	
+				cursor: not-allowed	
+			a:hover
+				text-decoration: none		
+		.active
+			font-family: "Gotham-Bold"
+			$image: "general/h3-medium.png"
+			+image-block($image)
+			a
+				color: #fff
+				text-decoration: none
+			a:hover
+				text-decoration: none
+	
+	.content.active
+		display: block
+	.content
+		display: none
+		margin: 0 auto
+		width: 740px
+
+	.col-01
+		width: 370px
+		display: table-cell
+		p
+			text-align: left
+	.col-02
+		padding-left: 50px
+		width: 370px
+		display: table-cell
+		p
+			text-align: left
+	.ranking		
+		.data
+			.line
+				background: rgba(99, 8, 17, 0.8)
+				width: 370px
+				height: 30px
+				display: block
+				position: relative
+				margin-bottom: 5px
+				box-sizing: border-box
+				padding: 3px 10px
+			.col
+				display: table-cell
+				padding-right: 10px
+			.col-1
+				font-family: "Gotham-Ultra"
+				font-size: 20px
+				color: #fff					
+			.col-2
+				font-family: "Gotham-Medium"
+				font-size: 15px
+				color: #fff	
+				width: 190px
+			.col-3
+				font-family: "Gotham-Medium"
+				font-size: 15px
+				color: #ffcb1c
+				width: 120px
+				padding: 0
+				text-align: right
+	.route
+		$image: "winners/route.png"
+		+image-block($image)
+		margin: -123px 0 0 77px

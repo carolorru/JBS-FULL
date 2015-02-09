@@ -1,0 +1,99 @@
+#login
+	$image: "bg-login.png"
+	+image-block($image)
+	display: block
+	position: absolute
+	top: 50%
+	margin-top: -233px
+
+	.bt-voltar
+		margin-left: 10px
+
+	.compass
+		$image: "compass.png"
+		+image-block($image)
+		position: absolute
+		display: block
+		top: -90px
+		right: -60px
+		z-index: 1003
+	
+	h1
+		$image: "logo.png"
+		+image-block($image)
+		+ir		
+		margin: 53px 35px
+		display: inline-block
+
+	.box-right
+		display: inline-block
+		width: 305px
+		margin-left: 15px
+		vertical-align: top
+		margin-top: 42px
+		h2
+			font-family: "Rockwell-bold"
+			margin-bottom: 30px
+
+		form
+			height: 154px
+			input
+				border: none
+				background: rgba(53, 22, 14, 0.8)
+				width: 291px
+				height: 25px
+				margin: 3px 0	
+				padding: 0 7px
+				font-family: 'Gotham-Bold'
+				text-transform: uppercase
+				color: #fff
+
+			::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder   
+				font-family: 'Gotham-Bold'
+				color: #fff
+				opacity: 1
+				
+
+			a
+				color: #35160e
+				font-size: 12px
+				font-family: 'Gotham-Bold'
+				line-height: 30px
+
+			button
+				font-family: 'Gotham-Medium'
+				border: none
+				color: #fff
+				font-size: 12px
+				padding: 0 5px 0 9px
+				float: right
+				$image: "bg-btn.png"
+				background: image-url($image) no-repeat top left
+				height: image-height($image)
+				width: 65px
+				margin-top: 3px
+		.sign-in
+			p
+				font-family: 'Gotham-Bold'
+				font-size: 13px
+				line-height: 30px
+			a
+				font-family: 'Gotham-Medium'
+				border: none
+				color: #fff
+				font-size: 12px
+				text-decoration: none
+				padding: 0 8px 0 20px
+				float: right
+				display: block
+				$image: "bg-btn.png"
+				background: image-url($image) no-repeat top left
+
+#login.search-CPF
+	.box-right
+		margin-top: 130px
+	h2
+		margin-bottom: 10px
+		font-size: 26px
+.bt-voltar
+	margin-left: 10px

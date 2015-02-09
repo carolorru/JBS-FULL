@@ -1,0 +1,181 @@
+#user-form
+	.clear
+		height: 30px
+	h3
+		$image: "general/h3.png"
+		+image-block($image)
+		font-family: "Gotham-Bold"
+		font-size: 20px
+		line-height: 26px
+		text-align: center
+		color: #fff
+		margin: 0 0 1px
+
+	button
+		font-family: 'Gotham-Medium'
+		border: none
+		color: #fff
+		font-size: 12px
+		padding: 0 10px 0 15px
+		$image: "bg-btn.png"
+		background: image-url($image) no-repeat top left
+		height: 30px
+		width: auto
+		cursor: pointer
+		position: absolute
+		bottom: -40px
+		right: 100px
+	.send
+		right: 0px
+	.bt-voltar
+		right: 185px
+
+	.data-access
+		margin-left: 25px
+	
+	form
+		position: relative
+		display: block
+		min-height: 470px
+
+	.box
+		width: 575px
+		display: inline-table
+		margin-bottom: 40px
+		clear: both
+	
+		>div
+			display: block
+			position relative
+			
+			label
+				display: block
+				font-family: 'Gotham-Bold'
+				font-size: 15px
+				line-height: 18px
+				color: #630811
+				padding-top: 10px
+			span
+				font-size: 11px
+			input
+				border: none
+				background: rgba(53, 22, 14, 0.8)
+				height: 30px
+				width: 100%
+				display: block
+				margin: 0	
+				padding: 3px 7px
+				font-family: 'Gotham-Bold'
+				text-transform: uppercase
+				color: #fff
+				box-sizing: border-box
+			input[type="checkbox"]
+				-moz-appearance: none !important
+				-webkit-appearance: none !important
+				-ms-appearance: none !important
+				-o-appearance: none !important
+				appearance: none !important
+				border: none
+				$image: "general/check.png"
+				+image-block($image)
+				background-color: tranparent
+				padding: 0
+				margin: 0
+				color: #630811
+			input[type=checkbox]:checked
+				-webkit-appearance: none
+				-moz-appearance: none			
+				appearance: none
+				$image: "general/checked.png"
+				+image-block($image)
+
+			select
+				$image: "general/arrow.png"
+				border: none
+				background: rgba(53, 22, 14, 0.8) image-url($image) no-repeat 98% 50%
+				height: 30px
+				width: 100%
+				display: block
+				padding: 3px 30px 3px 7px
+				font-family: 'Gotham-Bold'
+				text-transform: uppercase
+				color: #fff
+				box-sizing: border-box
+				-webkit-appearance: none
+				-moz-appearance: none			
+				appearance: none
+		
+		.input-cpf
+			width: 140px
+			display: inline-block
+			float: left
+		.input-email
+			width: 425px
+			display: inline-block
+			float: right
+		.input-pass, .input-role
+			display: inline-block
+			float: left
+			width: 285px
+		.input-pass-confirm, .input-group
+			display: inline-block
+			float: right
+			width: 285px
+
+		.input-cep
+			display: inline-table
+			width: 170px
+			float: left
+		.input-search
+			display: inline-table
+			margin-left: 10px
+			width: 66px
+			float: left
+		.input-uf
+			display: inline-table
+			width: 215px
+			margin-left: 10px
+			float: left
+		.input-city
+			display: inline-table
+			width: 254px
+			margin-left: 10px
+			float: left
+		.input-address
+			display: inline-table
+			width: 590px
+			margin-left: 10px
+			float: left
+		.input-neighbor
+			display: inline-table
+			width: 260px
+			float: left
+		.input-num
+			display: inline-table
+			width: 70px
+			margin-left: 10px
+			float: left
+		.input-addition
+			display: inline-table
+			width: 320px
+			margin-left: 10px
+			float: left
+		.input-phone1, .input-phone2
+			display: inline-table
+			width: 205px
+			margin-left: 10px
+			float: left
+		.input-check
+			display: inline-block
+			margin-top: 10px
+			padding-right: 10px
+			text-transform: uppercase
+			height: 15px
+			a
+				color: #630811
+
+	.data-contact
+		width: 1180px
+		h3
+			$image: "general/h3-big.png"
+			+image-block($image)

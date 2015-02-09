@@ -1,0 +1,47 @@
+#home
+	margin: 0 auto
+	position: relative
+	display: block
+	clear: both
+	$image: "bg-home.png"
+	+image-block($image)
+
+	h1 
+		margin: 0
+		padding: 0
+		a
+			$image: "logo-big.png"
+			+image-block($image)
+			+ir		
+			margin: 176px 0 0 105px
+			display: inline-block
+	a
+		$image: "btn-video.png"
+		+image-block($image)
+		+ir		
+		margin: 50px 0 0 130px
+		display: inline-block
+	.box
+		position: absolute
+		top: 80px
+		right: 53px
+	h2
+		font-family: "Rockwell-bold"
+		width: 480px
+		text-align: center
+		display: block
+		margin-right: 7px
+		font-size: 26px
+		color: #4c3121
+	p
+		font-family: "Gotham-Medium"
+		width: 480px
+		text-align: center
+		display: block
+		margin-right: 7px
+		font-size: 18px
+		color: #630811
+		margin-top: 50px
+		margin-bottom: 20px
+	img
+		margin-left: -175px

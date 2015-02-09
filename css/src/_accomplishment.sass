@@ -1,0 +1,214 @@
+.accomplishment
+	.bg-collage
+		.bg-top .content-top
+			h2
+				text-transform: uppercase
+				text-align: left
+				margin-top: 85px
+#accomplishment
+	position: relative
+	display: block
+	clear: both
+	
+	.loading
+		position: absolute
+		top: 70px
+		left: 50%
+		margin-left: -21px
+		display: none
+	.nav 
+		ul
+			margin: 0
+			padding: 0
+			display: block
+		li			
+			font-family: "Gotham-Book"
+			font-size: 19px
+			line-height: 26px
+			text-align: center
+			display: table-cell
+			margin: 0 0 1px	
+			padding-right: 15px
+			a
+				color: #630811
+				text-decoration: none
+			a:hover
+				text-decoration: underline
+		.disable
+			a
+				color: #616161
+				text-decoration: none	
+				cursor: not-allowed	
+			a:hover
+				text-decoration: none		
+		.active
+			font-family: "Gotham-Bold"
+			$image: "general/h3-medium.png"
+			+image-block($image)
+			a
+				color: #fff
+				text-decoration: none
+			a:hover
+				text-decoration: none
+
+	.box
+		width: 570px
+		display: inline-table
+		position: relative
+	.box-2.active
+		display: inline-table
+	.box-2
+		margin-left: 30px
+		display: none
+		.title
+			font-family: "Gotham-Ultra"
+			font-size: 18px
+			color: #4c3121
+			text-transform: uppercase
+			margin-bottom: 10px
+		span
+			font-family: "Gotham-Bold"
+			font-size: 16px
+			line-height: 23px
+	.content.active
+		display: block
+	.content
+		display: none
+		.your-position
+			$image: "accomplishment/bg-your-position.png"
+			+image-block($image)
+			margin-bottom: 40px
+			display: block
+			position: relative
+			p
+				font-family: "Gotham-Bold"
+				font-size: 27px
+				color: #FFF
+				text-transform: uppercase
+				line-height: 31px
+				padding: 42px 20px
+				text-align: justify
+				margin: 0
+			span
+				font-size: 40px
+				color: #630811
+				text-transform: uppercase
+				float: right
+				text-align: center
+				display: block
+				margin-top: -20px
+				width: 100px
+				line-height: 20px
+			b
+				font-family: "Gotham-Ultra"
+				font-size: 20px
+				color: #ad2528
+				text-transform: uppercase
+				line-height: 20px
+		.your-miles
+			$image: "accomplishment/bg-your-miles.png"
+			+image-block($image)
+			margin-bottom: 50px
+			display: block
+			position: relative
+			p
+				display: table-cell
+				font-family: "Gotham-Bold"
+				font-size: 27px
+				text-transform: uppercase
+				padding: 0 15px	
+				line-height: 48px			
+			.col-1
+				width: 300px
+				color: #fff
+			.col-2
+				font-size: 35px
+				color: #ffcb1c
+		.ranking
+			p
+				font-family: "Gotham-Ultra"
+				font-size: 18px
+				color: #4c3121
+				text-transform: uppercase
+			.data
+				.line
+					background: rgba(99, 8, 17, 0.8)
+					width: 370px
+					height: 30px
+					display: block
+					position: relative
+					margin-bottom: 5px
+					box-sizing: border-box
+					padding: 3px 10px
+				.col
+					display: table-cell
+					padding-right: 10px
+				.col-1
+					font-family: "Gotham-Ultra"
+					font-size: 20px
+					color: #fff					
+				.col-2
+					font-family: "Gotham-Medium"
+					font-size: 15px
+					color: #fff	
+					width: 190px
+				.col-3
+					font-family: "Gotham-Medium"
+					font-size: 15px
+					color: #ffcb1c
+					width: 120px
+					padding: 0
+					text-align: right
+		.index
+			background: rgba(99, 8, 17, 0.8)
+			width: 100%
+			height: auto
+			display: block
+			position: relative
+			margin-bottom: 5px
+			box-sizing: border-box
+			padding: 3px 10px
+			color: #fff
+			text-transform: uppercase
+			.index-type, .fufillment
+				display: table-cell
+				width: 275px
+				font-family: "Gotham-Medium"
+				font-size: 10px
+				span
+					font-size: 14px
+			.fufillment
+				text-align: right
+				b
+					color: #ffcb1c
+					font-size: 14px
+
+			.progress 
+				height: 10px
+				margin: 20px 0 15px
+				background-color: #ad7a7f
+				position: relative
+				display: block
+
+				.progress-bar
+					float: left
+					width: 0
+					height: 100%
+					background-color: #ffcb1c
+					-webkit-transition: width .6s ease
+					-o-transition: width .6s ease
+					transition: width .6s ease
+					label
+						font-family: "Gotham-Light"
+						font-size: 14px
+						line-height: 10px
+						color: rgba(255, 255, 255, 0.8)
+						position: absolute
+						top: -14px
+						border-left: 2px solid #ffcb1c
+						// margin-left: -42px
+						height: 22px
+						width: 40px
+						padding-top: 2px
+						left: 0
+						// text-align: right

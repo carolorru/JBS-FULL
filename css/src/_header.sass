@@ -1,0 +1,61 @@
+header
+	width: 100%
+	height: 80px
+	clear: both
+	position: relative
+	display: block
+
+	.user-info
+		width: 450px
+		float: right
+		clear: both
+		color: #d5c597
+		margin: 15px 180px 15px 0
+
+		.info-block-left
+			float: left
+			width: 320px
+			padding-right: 10px
+			border-right: 1px solid #d5c597
+			text-align: right
+			p
+				font-size: 15px
+				line-height: 22px
+				margin: 0
+				b
+					font-family: "Gotham-Bold"
+			span
+				font-size: 11px
+				b
+					font-family: "Gotham-Bold"
+
+		.info-block-right
+			float: right
+			padding-left: 10px
+			a
+				color: #d5c597
+				text-decoration: none
+			
+			.my-info
+				font-size: 11px
+				line-height: 23px
+				i
+					$image: "ico/user.png"
+					+image-block($image)
+					display: inline-block
+			.logout
+				font-size: 10px
+				i
+					$image: "ico/close.png"
+					+image-block($image)
+					display: inline-block
+			a:hover
+				text-decoration: underline
+	.compass
+		$image: "compass.png"
+		+image-block($image)
+		position: absolute
+		display: block
+		top: 10px
+		right: -45px
+		z-index: 1003

@@ -1,0 +1,157 @@
+.contact
+	.bg-collage
+		.bg-top .content-top
+			h2
+				text-transform: uppercase
+				text-align: left
+				margin-top: 85px
+#contact
+	position: relative
+	display: block
+	clear: both
+	.clear
+		height: 30px
+	p
+		font-size: 15px
+		b
+			font-family: "Gotham-Black"
+			color: #630811
+	h3
+		$image: "general/h3.png"
+		+image-block($image)
+		font-family: "Gotham-Bold"
+		font-size: 20px
+		line-height: 26px
+		text-align: center
+		color: #fff
+		margin: 0 0 1px
+	h3.faq
+		$image: "general/h3-x-big.png"
+		+image-block($image)
+
+	button
+		font-family: 'Gotham-Medium'
+		border: none
+		color: #fff
+		font-size: 12px
+		padding: 0 10px 0 15px
+		$image: "bg-btn.png"
+		background: image-url($image) no-repeat top left
+		height: 30px
+		width: auto
+		cursor: pointer
+		position: absolute
+		right: 80px
+	.send
+		right: 0px
+	.box
+		margin-bottom: 40px
+		clear: both
+		position: relative
+		display: block
+	
+	.col
+		width: 575px
+		display: inline-table
+		position: relative
+		>div
+			display: block
+			position relative
+	.col-1, .col-2
+		width: 500px
+			
+	label
+		display: block
+		font-family: 'Gotham-Bold'
+		font-size: 15px
+		line-height: 18px
+		color: #630811
+		padding-top: 10px
+	input, textarea
+		border: none
+		background: rgba(53, 22, 14, 0.8)
+		height: 30px
+		width: 100%
+		display: block
+		margin: 0	
+		padding: 3px 7px
+		font-family: 'Gotham-Bold'
+		text-transform: uppercase
+		color: #fff
+		box-sizing: border-box
+	textarea
+		height: 146px
+		-webkit-appearance: none
+		-moz-appearance: none			
+		appearance: none
+		margin-bottom: 15px
+	select
+		$image: "general/arrow.png"
+		border: none
+		background: rgba(53, 22, 14, 0.8) image-url($image) no-repeat 98% 50%
+		height: 30px
+		width: 100%
+		display: block
+		padding: 3px 30px 3px 7px
+		font-family: 'Gotham-Bold'
+		text-transform: uppercase
+		color: #fff
+		box-sizing: border-box
+		-webkit-appearance: none
+		-moz-appearance: none			
+		appearance: none
+	.col-right
+		margin-left: 25px
+#accordion.panel-group, #accordion02.panel-group
+	box-sizing: border-box
+	display: block
+	margin-bottom: 20px
+	a
+		color: #4C3121
+	.panel-default
+		box-sizing: border-box
+		display: block
+		margin-bottom: 5px
+		.panel-heading
+			background-color: rgba(99, 8, 17, 0.8)
+			box-sizing: border-box
+			display: block
+			padding: 10px
+			h4
+				margin: 0
+			a
+				box-sizing: border-box
+				color: #FFFFFF
+				cursor: auto
+				display: inline
+				height: auto
+				text-decoration: none
+				width: auto
+				font-family: 'Gotham-Bold'
+				font-size: 14px	
+		.collapse 
+			display: none
+			visibility: hidden
+		.collapsing
+			position: relative
+			height: 0
+			overflow: hidden
+			-webkit-transition-timing-function: ease
+			-o-transition-timing-function: ease
+			transition-timing-function: ease
+			-webkit-transition-duration: .35s
+			-o-transition-duration: .35s
+			transition-duration: .35s
+			-webkit-transition-property: height,visibility
+			-o-transition-property: height,visibility
+			transition-property: height,visibility
+		.collapse.in 
+			display: block
+			visibility: visible
+		.panel-body
+			background-color: rgba(226, 212, 171, 0.4)
+			box-sizing: border-box
+			display: block
+			padding: 15px
+			visibility: visible
+			font-size: 14px	

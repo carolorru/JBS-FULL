@@ -1,0 +1,101 @@
+.gift
+	.bg-collage
+		.bg-top .content-top
+			h2
+				text-transform: uppercase
+				text-align: left
+				margin-top: 85px
+#gift
+	h3
+		$image: "general/h3-small.png"
+		+image-block($image)
+		font-family: "Gotham-Bold"
+		font-size: 20px
+		line-height: 26px
+		text-align: center
+		color: #fff
+		margin: 0 0 1px
+	hr
+		margin-bottom: 30px
+
+	p
+		font-family: 'Gotham-Medium'
+		font-size: 18px
+		color: #630811
+		display: inline-block
+	
+		span
+			font-family: 'Gotham-Medium'
+			font-size: 16px
+			color: #4c3121
+	.att
+		font-family: "Gotham-Bold"
+		font-size: 23px
+		background: rgba(101, 11, 19, 0.8)
+		padding: 15px
+		color: #fff
+
+	.items
+		display: block
+		position: relative
+		margin-bottom: 40px
+		.item
+			display: table-cell
+			width: 560px		
+			margin: 0
+			padding: 0
+			
+			.description
+				height: 58px
+				margin-bottom: 10px
+				width: 370px	
+				position: relative
+				display: block	
+				clear: both
+				>div
+					display: inline-block
+					margin: 0
+					padding: 0
+					height: 58px
+				.num
+					width: 54px
+					background: #fff
+					font-family: 'Gotham-Bold'
+					font-size: 40px
+					color: #630811
+					text-align: center
+					line-height: 58px
+					float: left
+				.list
+					$image: "gift/bg-item.png"
+					+image-block($image)
+					font-family: 'Gotham-Bold'
+					font-size: 18px
+					color: #fff
+					float: right
+					ul
+						margin: 0
+						padding: 8px 0px 0px 30px
+			.gift-image
+				border: 2px dashed rgba(76, 49, 33, 0.8)
+				img
+					max-width: 368px
+					max-height: 258px
+					overflow: hidden
+					padding: 3px 3px 0
+
+		.item-2
+			padding: 0 30px
+	h3.tit-video
+		$image: "general/h3-x-big.png"
+		+image-block($image)
+	.box-video
+		$image: "gift/video.png"
+		+image-block($image)
+		a
+			padding: 60px 52px 18px
+			width: 333px
+			height: 235px
+			display: block
+
+			
